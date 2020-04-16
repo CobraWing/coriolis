@@ -8,20 +8,20 @@ RUN mkdir -p /src/app/coriolis-data
 RUN apk add --update git
 
 RUN npm i -g npm
-ADD https://api.github.com/repos/edcd/coriolis-data/git/refs/heads/master /tmp/version.json
+ADD https://api.github.com/repos/CobraWing/coriolis-data/git/refs/heads/master /tmp/version.json
 
 # Set up coriolis-data
 WORKDIR /src/app/coriolis-data
-RUN git clone https://github.com/EDCD/coriolis-data.git .
+RUN git clone https://github.com/CobraWing/coriolis-data.git .
 RUN git checkout ${BRANCH}
 RUN npm install --no-package-lock
 RUN npm start
 
 
-ADD https://api.github.com/repos/edcd/coriolis/git/refs/heads/master /tmp/version.json
+ADD https://api.github.com/repos/CobraWing/coriolis/git/refs/heads/master /tmp/version.json
 # Set up coriolis
 WORKDIR /src/app/coriolis
-RUN git clone https://github.com/EDCD/coriolis.git .
+RUN git clone https://github.com/CobraWing/coriolis.git .
 RUN git checkout ${BRANCH}
 RUN npm install --no-package-lock
 RUN npm run build
