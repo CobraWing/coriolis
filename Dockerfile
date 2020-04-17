@@ -32,5 +32,4 @@ FROM fholzer/nginx-brotli as web
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=builder /src/app/coriolis/build /usr/share/nginx/html
 WORKDIR /usr/share/nginx/html
-EXPOSE 80
 CMD ["nginx", "-c", "/etc/nginx/nginx.conf", "-g", "daemon off;"]
