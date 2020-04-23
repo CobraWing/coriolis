@@ -29,7 +29,7 @@ export default class AboutPage extends Page {
       >
         <h1>
           <CoriolisLogo style={{ marginRight: '0.4em' }} className="xl" />
-          <span className="warning">Coriolis EDCD Edition</span>
+          <span className="warning">Ocellus EDCD Edition</span>
         </h1>
 
         <p>
