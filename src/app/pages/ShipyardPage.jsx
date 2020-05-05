@@ -123,7 +123,7 @@ export default class ShipyardPage extends Page {
     }
 
     this.state = {
-      title: 'Ocellus EDCD Edition - Shipyard',
+      title: 'Ocellus CW Edition - Shipyard',
       shipPredicate: 'name',
       shipDesc: true,
       shipSummaries: ShipyardPage.cachedShipSummaries,

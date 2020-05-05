@@ -146,7 +146,7 @@ export default class ComparisonPage extends Page {
     builds.sort(sortBy(predicate));
 
     return {
-      title: 'Ocellus EDCD Edition - Compare',
+      title: 'Ocellus CW Edition - Compare',
       predicate,
       desc,
       facets,
